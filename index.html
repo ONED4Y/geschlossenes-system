@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Geschlossenes System</title>
+    <!-- ADDONS/CSS/JAVASCRIPT -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/be1c464a8f.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- STRUCTURE: -->
+    <!-- DIV TITLE -->
+    <!-- DIV CONTAINING ALL POINTS -->
+    <!-- INSIDE: ALL CHAPTERS USING DROPDOWN BUTTONS -->
+    <!-- PHOTOS IN CHAPTER 4 -->
+    <div id="title-container">
+      <div class="centered-text">EXPERIMENT: PFLANZEN IM GESCHLOSSENEN SYSTEM</div>
+    </div>
+    <div id="content-container">
+      <div class="chapters" id="chapter-1">
+        <div class="chapters-title">
+          <div class="chapter-title-text">1. Vorüberlegung</div>
+          <div class="chapter-btns" id="c1-btn"><span class="fa fa-caret-down"></span></div>
+        </div>
+        <div class="chapters-content">
+          <div class="chapters-text">
+            Beim Lernzirkel zu Biosphäre 2 wollte Ege ein geschlossenes System in einem Auto bauen. Ege wollte uns aber kein Auto kaufen, also brauchten wir Alternativen. Vorüberlegungen:
+            <ul>
+              <li>Welcher Behälter?<br><i class="fa fa-arrow-right"></i> Großes Gurkenglas</li>
+              <li>Welche Pflanzen?<br><i class="fa fa-arrow-right"></i> Kressesamen (Ege hatte noch welche übrig) + "andere, fertige Pflanzen"</li>
+              <li>Welche Erde?<br><i class="fa fa-arrow-right"></i> Wir führten das Experiment 3x durch: 1x mit im Ofen sterilisierter Erde, 1x mit unsterilisierter Erde, und ein offenes System mit unsterilisierter Erde zum Vergleich</li>
+            </ul>
+            Während des Projekts sollen die Stoffkreisläufe (z.B. Photosynthese, Wasser im Glas) dokumentiert werden.
+
+            Anschließend soll die Entwicklung der Pflanzen miteinander verglichen werden; welchen Effekt hat es, z.B. die Erde im Ofen zu backen?
+          </div>
+        </div>
+      </div>
+      <div class="chapters" id="chapter-2">
+        <div class="chapters-title">
+          <div class="chapter-title-text">2. Aufbau + Inhalt</div>
+          <div class="chapter-btns" id="c3-btn"><span class="fa fa-caret-down"></span></div>
+        </div>
+        <div class="chapters-content">
+          <div class="chapters-text">
+            Aufbau:
+            <ol>
+              <li>Unten 1 Schicht Steine</li>
+              <li>Ca. 3-4cm Erde über den Steinen</li>
+              <li>Pflanzen einpflanzen, Kressesamen reinlegen</li>
+            </ol>
+
+            Inhalt:
+            <ul>
+              <li>Nils' Glas: im Ofen sterilisierte Erde</li>
+              <li>Orhans Glas: "normale" Erde</li>
+              <li>Eges Glas: offenes System, Erde nicht sterilisiert</li>
+            </ul>
+
+            Wasser:
+            <ul>
+              <li>Bei den geschlossenen Systemen (Nils und Orhan) muss nur 1x am Anfang Wasser eingegossen werden, da das Wasser nicht entweichen kann.</li>
+              <li>Beim offenen System (Ege) muss immer wieder Wasser eingegossen werden, da das Wasser, wie bei einem normalen Blumentopf auch, entweicht.<br><i>Ob er das getan hat wissen wir selber nicht</i></li>
+            </ul>
+
+            Experimentierbeginn (Versiegelung der geschlossenen Systeme): 17.12.2021 12:00
+          </div>
+        </div>
+      </div>
+      <div class="chapters" id="chapter-3">
+        <div class="chapters-title">
+          <div class="chapter-title-text">3. Beobachtung</div>
+          <div class="chapter-btns" id="c4-btn"><span class="fa fa-caret-down"></span></div>
+        </div>
+        <div class="chapters-content">
+          <div class="chapters-text">
+            <!-- FOTOSTRECKE VON JEDEM GLASS + SLIDER ETC -->
+            <div id="img-container">
+              <div class="img-box" id="nils">
+                <div>NILS' GLAS<br></div>
+                <img src="images/nils/1.jpg" class="images" id="nils-image">
+                <input type="range" class="sliders" id="nils-slider" min="1" max="19" value="1" oninput="changeImage(this, 'nils')">
+              </div>
+              <div class="img-box" id="orhan">
+                <div>ORHANS GLAS<br></div>
+                <img src="images/orhan/1.jpg" class="images" id="orhan-image">
+                <input type="range" class="sliders" id="orhan-slider" min="1" max="15" value="1" oninput="changeImage(this, 'orhan')">
+              </div>
+              <div class="img-box" id="ege">
+                <div>EGE GLAS<br></div>
+                <img src="images/ege/1.jpg" class="images" id="ege-image">
+                <input type="range" class="sliders" id="ege-slider" min="1" max="6" value="1" oninput="changeImage(this, 'ege')">
+              </div>
+            </div>
+
+            Beobachtungen:
+            <ul>
+              <li>
+                Nils:
+                <ul>
+                  <li>Die Kressesamen keimen bereits nach kurzer Zeit, allerdings wachsen sie nur bis zu einer gewissen Größe, danach endet ihr Wachstum und sie beginnen, allmählich einzugehen.</li>
+                  <li>Die ausgewachsenen Pflanzen gehen sehr langsam ebenfalls ein und färben sich gelb.</li>
+                </ul>
+              </li>
+              <li>
+                Orhan:
+                <ul>
+                  <li>Die Kressesamen keimen ebenfalls nach einer kurzen Zeit, allerdings bilden sie nur sehr instabile und schwache Strukturen aus; sie gehen nach wenigen Tagen wieder ein und färben sich gelb.</li>
+                  <li>Den ausgewachsenen Pflanzen geht es anfangs vergleichsweise gut, sterben schließlich aber ziemlich schnell ab.</li>
+                </ul>
+              </li>
+              <li>
+                Ege:
+                <ul>
+                  <li>Die Kressesamen keimen schnell, bilden stabile Strukturen sowie eine Hohe Anzahl Chloroplasten aus und wachsen rapide in die Höhe.</li>
+                  <li>Die ausgewachsenen Pflanzen bleiben unverändert. Sie gehen nicht ein und färben sich auch nicht gelb.</li>
+                </ul>
+              </li>
+            </ul>
+
+            Zusammengefasst:
+            <ul>
+              <li>Beim offenen System wachsen die Pflanzen gesund, beim geschlossenen System gehen sie allmählich ein.</li>
+              <li>Bei der im Ofen sterilisierten Erde gehen die Pflanzen langsamer ein als in der unsterilisierten Erde.</li>
+            </ul>
+
+            <!-- VERGLEICHE (mit Kriterien) -->
+            <!-- GESCHLOSSENE SYSTEME VS OFFENES SYSTEM -->
+            <!-- OFENERDE VS NORMALE ERDE -->
+          </div>
+        </div>
+      </div>
+      <div class="chapters" id="chapter-4">
+        <div class="chapters-title">
+          <div class="chapter-title-text">4. Auswertung</div>
+          <div class="chapter-btns" id="c5-btn"><span class="fa fa-caret-down"></span></div>
+        </div>
+        <div class="chapters-content">
+          <div class="chapters-text">
+            Photosynthese:
+            <ul>
+              <li>Gleichung: 6 CO<sub>2</sub> + 6 H<sub>2</sub>O → C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6 O<sub>2</sub></li>
+              <li>D.h. Pflanzen wandeln Kohlenstoffdioxid und Wasser in Glukose und Sauerstoff um.</li>
+            </ul>
+          
+            Vergleich: Geschlossene Systeme vs Offenes System
+
+            Geschlossene Systeme:
+            <ul>
+              <li>In geschlossenen Systemen gibt es zwar H<sub>2</sub>O (dies kann nicht entweichen), allerdings gibt es nur begrenzte Mengen an CO<sub>2</sub> in ihnen, da kein Stoffaustausch mit der Umgebung erfolgt und keine Organismen im Glas sind, die O<sub>2</sub> in CO<sub>2</sub> umwandeln.</li>
+              <li>Zwar können Pflanzen durch die Zellatmung geringen Mengen an Sauerstoff aufnehmen, jedoch kann dies nicht verhindern, dass der CO<sub>2</sub>-Gehalt nach und nach sinkt; nach einer Zeit können die Pflanzen nicht mehr ausreichend Photosynthese betreiben, d.h. sie "ersticken" langsam und können keine Glukose (Energie) mehr herstellen.</li>
+              <li>Da die Photosynthese in geschlossenen Systemen durch die nicht existierenden Sauerstoffverbraucher stark beeinträchtigt ist, bilden die Kressepflanzen weniger Chloroplasten aus (gelblich-grünliche Färbung); dies ist der gleiche Effekt, der auch bei Lichtmangel entsteht.</li>
+            </ul>
+
+            Offenes System:
+            <ul>
+              <li>In einem offenen System können die Pflanzen unbegrenzt weiter Photosynthese betreiben, sofern ihnen genug Wasser zugeführt wird.</li>
+              <li>Da das System offen ist, entweicht der produzierte Sauerstoff aus dem Glas, gleichzeitig gelangt auch neues CO<sub>2</sub> zu den Pflanzen.</li>
+              <li>Hier ist die Photosynthese nicht beeinträchtigt, wodurch die Kresse stabile Strukturen sowie viele Chloroplasten ausbildet (satte Grünfärbung; schnelles und gerades Wachstum in die Höhe).</li>
+            </ul><br>
+
+            Zielsetzung der Ofenerde:
+            <ul>
+              <li>Die Ofenerde wird verwendet, um Schimmel und Faulnis vorzubeugen; dieser schädigt dem Wachstum der Pflanzen.</li>
+              <li>Der Versuch bewies, dass die Ofenerde tatsächlich hilft: während Nils' Pflanzen gedeihen und nur langsam absterben, sterben Orhans Pflanzen nach kurzer Zeit ab.</li>
+            </ul>
+
+
+            Fazit: Damit ein geschlossenes System funktionieren kann, muss dafür gesorgt werden, dass der Stoffkreislauf darin vollständig ist, d.h. dass nicht ein Stoff (O<sub>2</sub>) sich immer weiter ansammelt und kein Organismus diesen Stoff verwerten kann. Da dies im Versuch nicht gegeben war, sind die Versuchspflanzen nach einer Zeit abgestorben.
+
+
+            <!-- Photosynthese erklären - was ist beim geschlossenen System gegeben und was nicht, was fehlt den Pflanzen? Vergleich zum offenen System
+            Erklären, was passiert, wenn kein frischer Sauerstoff bzw kein frisches CO2 erhältlich ist, und wie sie eingehen
+
+            Unterschiede von Ofenerde und normaler Erde erklären
+
+            Schreiben, warum dies beim offenen System nicht passiert ist - dort gibt es Stoffaustausch mit der Umgebung -->
+
+            <!-- Warum verhalten die Systeme sich so wie sie es tun? -->
+            <!-- Stichpunkte zu jedem Glas, was ist dort genau passiert? (mit so 3 separaten Kästen)-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
